@@ -1,0 +1,11 @@
+.banner{
+background-image: url(https://c4.wallpaperflare.com/wallpaper/488/781/97/paysage-nature-road-trees-wallpaper-preview.jpg);
+color: white;
+font-size: 30px;
+font-style: italic;
+display: grid;
+place-items: center;
+padding: 5rem;
+margin: 3rem;
+border-radius: 40px;
+}
