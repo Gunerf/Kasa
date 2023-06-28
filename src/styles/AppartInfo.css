@@ -1,0 +1,48 @@
+body{
+    padding-inline: 4rem;
+}
+
+.appart-image{
+    border-radius: 30px;
+    height: 35rem;
+    width: 100%;
+    object-fit: cover; 
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+.appart-title h1{
+    margin: 0;
+    margin-top: 1rem;
+    color: #ff6060;
+}
+.appart-title h2{
+    margin: 0;
+    color: #ff6060;
+}
+.dropdown{
+    display: flex;
+    justify-content: space-between;
+}
+.appart-equipements{
+    width: 40%;
+}
+.appart-description{
+    width: 40%;
+}
+.tags-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding-top: 1rem;
+}
+.tag{
+    background-color: #ff6060;
+    padding: 0.2rem;
+    padding-inline: 2rem;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.main-title{
+    display: flex;
+    justify-content: space-between;
+}
