@@ -11,7 +11,7 @@
 }
 .appart{
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     width: 340px;
     height: 340px;
     margin: 1.5rem;

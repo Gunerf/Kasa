@@ -1,27 +1,18 @@
 import React from 'react'
 import '../styles/Array.css'
+import data from '../data/logements.json'
+import Appart from './Appart'
 
 function Array() {
+  console.log(data)
   return (
     <div className="background">
-      <div className="appart">
-        <h2 className="title">Titre de la location</h2>
-      </div>
-      <div className="appart">
-        <h2 className="title">Titre de la location</h2>
-      </div>
-      <div className="appart">
-        <h2 className="title">Titre de la location</h2>
-      </div>
-      <div className="appart">
-        <h2 className="title">Titre de la location</h2>
-      </div>
-      <div className="appart">
-        <h2 className="title">Titre de la location</h2>
-      </div>
-      <div className="appart">
-        <h2 className="title">Titre de la location</h2>
-      </div>
+      <Appart />
+      <Appart />
+      <Appart />
+      <Appart />
+      <Appart />
+      <Appart />
     </div>
   )
 }
