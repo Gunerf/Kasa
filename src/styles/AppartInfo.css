@@ -47,6 +47,9 @@
 .main-title{
     display: flex;
     justify-content: space-between;
+    @media screen and (width <= 768px) {
+    flex-direction: column;
+    }
 }
 .profil-picture{
     background-color: silver;
@@ -67,7 +70,10 @@
     margin: 0;
 }
 .appart-notation{
-    font-size: 1.3rem;
+    font-size: 2rem;
+    @media screen and (width <= 768px) {
+        padding-top: 2rem;
+        }
 }
 .appart-notation .off{
     color: silver;
@@ -88,4 +94,11 @@
     margin: 0;
     border-radius: 0 0 10px 10px;
     padding: 1rem;
+}
+.appart-publicator{
+    @media screen and (width <= 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        gap: 7rem;
+        }
 }
