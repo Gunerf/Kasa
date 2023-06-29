@@ -46,3 +46,30 @@ body{
     display: flex;
     justify-content: space-between;
 }
+.profil-picture{
+    background-color: silver;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.profil{
+    display: flex;
+    padding-top: 1rem;
+    gap: 2rem;
+}
+.profil h3{
+    margin: 0;
+    color: #ff6060;
+}
+.profil p{
+    margin: 0;
+}
+.appart-notation{
+    font-size: 1.3rem;
+}
+.appart-notation .off{
+    color: silver;
+}
+.appart-notation .on{
+    color: #ff6060;
+}

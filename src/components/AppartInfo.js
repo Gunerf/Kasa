@@ -22,14 +22,19 @@ function AppartInfo() {
           </div>
         </div>
         <div className="appart-publicator">
-          <h3>Alexandre Dumas</h3>
-          <span className="profil-picture"></span>
+          <div className="profil">
+            <h3>
+              <p>Alexandre</p>
+              <p>Dumas</p>
+            </h3>
+            <div className="profil-picture"></div>
+          </div>
           <div className="appart-notation">
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
-            <span>⭐</span>
+            <span className="on">★</span>
+            <span className="on">★</span>
+            <span className="on">★</span>
+            <span className="off">★</span>
+            <span className="off">★</span>
           </div>
         </div>
       </div>
