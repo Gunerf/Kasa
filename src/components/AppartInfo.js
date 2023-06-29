@@ -4,13 +4,6 @@ import '../styles/AppartInfo.css'
 function AppartInfo() {
   return (
     <div className="appart-info">
-      <div className="container-image">
-        <img
-          className="appart-image"
-          src="https://picsum.photos/800/400"
-          alt=""
-        />
-      </div>
       <div className="main-title">
         <div className="appart-title">
           <h1>Cozy loft on the Canal Saint-Martin</h1>

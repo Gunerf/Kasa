@@ -1,12 +1,12 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Footer from '../components/Footer'
+import Cover from '../components/Cover'
 
 function About() {
   return (
     <>
       <Navbar />
-      <Footer />
+      <Cover />
     </>
   )
 }
