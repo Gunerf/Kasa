@@ -1,4 +1,4 @@
-body{
+.appart-info{
     padding-inline: 4rem;
 }
 
@@ -21,6 +21,8 @@ body{
 .dropdown{
     display: flex;
     justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 10rem;
 }
 .appart-equipements{
     width: 40%;
@@ -32,7 +34,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 .tag{
     background-color: #ff6060;
@@ -72,4 +74,18 @@ body{
 }
 .appart-notation .on{
     color: #ff6060;
+}
+.dropdown h3{
+    background: #ff6060;
+    padding: 1rem;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 0;
+    color: white;
+}
+.dropdown p{
+    background: whitesmoke;
+    color: #ff6060;
+    margin: 0;
+    border-radius: 0 0 10px 10px;
+    padding: 1rem;
 }
