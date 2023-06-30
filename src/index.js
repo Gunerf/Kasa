@@ -5,6 +5,7 @@ import App from './pages/App'
 import About from './pages/About'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Appart from './pages/Appart'
+import Error404 from './pages/Error404'
 
 const router = createBrowserRouter([
   {
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/*',
-    element: <h1>Erreur 404 NOT FOUND</h1>,
+    element: <Error404 />,
   },
 ])
 

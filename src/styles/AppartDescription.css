@@ -1,0 +1,21 @@
+.description{
+    display: flex;
+    flex-direction: column;
+    padding-inline: 15rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.description h3{
+    background: #ff6060;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 1rem;
+    margin-bottom: 0;
+}
+.description p{
+    background: whitesmoke;
+    margin-top: 0;
+    border-radius: 0 0 15px 15px;
+    padding: 1rem;
+    color: #FF6060;
+}
