@@ -1,7 +1,10 @@
 import React from 'react'
 import '../styles/AppartInfo.css'
+import { useLocation } from 'react-router-dom'
 
 function AppartInfo() {
+  const location = useLocation()
+  console.log(location)
   return (
     <div className="appart-info">
       <div className="main-title">

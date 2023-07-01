@@ -7,7 +7,12 @@ function Array() {
   return (
     <div className="background">
       {data.map((appart) => (
-        <Appart title={appart.title} image={appart.cover} />
+        <Appart
+          key={appart.id}
+          title={appart.title}
+          image={appart.cover}
+          id={appart.id}
+        />
       ))}
     </div>
   )

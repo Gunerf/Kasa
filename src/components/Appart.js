@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom'
 import '../styles/Appart.css'
 
 function Appart(props) {
+  const appartId = {
+    appartId: props.id,
+  }
   return (
-    <Link to="/info">
+    <Link to="/info" state={appartId}>
       <div className="appart">
         <div className="container">
           <img src={props.image} className="pic" alt=""></img>
