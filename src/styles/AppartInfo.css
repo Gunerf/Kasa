@@ -48,6 +48,8 @@
     width: 65px;
     height: 65px;
     border-radius: 50%;
+    overflow: hidden;
+    margin-left: 1rem;
 }
 .profil{
     display: flex;
@@ -57,6 +59,7 @@
 .profil h3{
     margin: 0;
     color: #ff6060;
+    width: 20%;
 }
 .profil p{
     margin: 0;
@@ -84,8 +87,7 @@
     background: whitesmoke;
     color: #ff6060;
     margin: 0;
-    border-radius: 0 0 10px 10px;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 .appart-publicator{
     @media screen and (width <= 768px) {
@@ -93,4 +95,8 @@
         flex-direction: row-reverse;
         gap: 7rem;
         }
+}
+.image-profil{
+    height: 100%;
+    width: 100%;
 }
