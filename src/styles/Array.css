@@ -1,6 +1,6 @@
 .background{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     flex-wrap: wrap;
     background-color: #DCDCDC;
     width: auto;
@@ -12,7 +12,7 @@
 .appart{
     display: flex;
     align-items: flex-end;
-    width: 340px;
+    width: 520px;
     height: 340px;
     margin: 1.5rem;
     padding: 2rem;
