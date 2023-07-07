@@ -52,7 +52,7 @@ function AppartInfo() {
           <div className="appart-equipements">
             <h3>Équipements</h3>
             {idFilter.equipments.map((equipments) => (
-              <p className="equip">{equipments}</p>
+              <li className="equip">{equipments}</li>
             ))}
           </div>
         </div>
