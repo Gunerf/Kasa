@@ -1,14 +1,14 @@
 import React from 'react'
 import Navbar from '../components/Navbar'
-import Banner from '../components/Banner'
 import Array from '../components/Array'
 import Footer from '../components/Footer'
+import Cover from '../components/Cover'
 
 function App() {
   return (
     <>
       <Navbar />
-      <Banner />
+      <Cover image="image.png" title="Chez vous, partout et ailleurs" />
       <Array />
       <Footer />
     </>

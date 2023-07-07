@@ -1,16 +1,21 @@
 import '../styles/AppartInfo.css'
 import { useLocation } from 'react-router-dom'
 import data from '../data/logements.json'
-import Cover from '../components/Cover'
 import Footer from '../components/Footer'
 import AppartDescription from './AppartDescription'
+import 'react-responsive-carousel/lib/styles/carousel.min.css'
+import { Carousel } from 'react-responsive-carousel'
 
 function AppartInfo() {
   const location = useLocation()
   const idFilter = data.find((appart) => appart.id === location.state.appartId)
   return (
     <>
-      <Cover image={idFilter.cover} />
+      <Carousel>
+        {idFilter.pictures.map((appart) => (
+          <img src={appart} alt="" />
+        ))}
+      </Carousel>
       <div className="appart-info">
         <div className="main-title">
           <div className="appart-title">

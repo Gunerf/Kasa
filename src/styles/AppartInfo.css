@@ -111,3 +111,8 @@
     margin: 0;
     padding-inline: 1rem;
 }
+.carousel .slide img{
+    padding-inline: 5rem;
+    height: 60vh;
+    object-fit: cover;
+}
