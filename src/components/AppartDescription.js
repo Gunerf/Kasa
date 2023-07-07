@@ -11,7 +11,7 @@ function AppartDescription(props) {
     <div onClick={accordion} className="description">
       <h3>
         {props.title}
-        <span>⇓</span>
+        <span>▼</span>
       </h3>
       <p>{visible && props.description}</p>
     </div>
