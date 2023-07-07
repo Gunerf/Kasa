@@ -8,7 +8,7 @@ function About() {
   return (
     <>
       <Navbar />
-      <Cover image="https://images6.alphacoders.com/568/thumb-1920-568500.jpg" />
+      <Cover image="paysageabout.png" />
       <AppartDescription
         title={'Fiabilité'}
         description={

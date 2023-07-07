@@ -1,15 +1,13 @@
-import React from 'react'
 import '../styles/AppartInfo.css'
 import { useLocation } from 'react-router-dom'
 import data from '../data/logements.json'
 import Cover from '../components/Cover'
+import Footer from '../components/Footer'
+import AppartDescription from './AppartDescription'
 
 function AppartInfo() {
   const location = useLocation()
-  console.log('AppertId:', location.state.appartId)
   const idFilter = data.find((appart) => appart.id === location.state.appartId)
-  console.log(idFilter)
-  console.log(idFilter.title)
   return (
     <>
       <Cover image={idFilter.cover} />
@@ -45,18 +43,19 @@ function AppartInfo() {
           </div>
         </div>
         <div className="dropdown">
-          <div className="appart-description">
-            <h3>Description</h3>
-            <p>{idFilter.description}</p>
-          </div>
-          <div className="appart-equipements">
-            <h3>Équipements</h3>
-            {idFilter.equipments.map((equipments) => (
+          <AppartDescription
+            title={<h3>Description</h3>}
+            description={idFilter.description}
+          />
+          <AppartDescription
+            title={<h3>Équipements</h3>}
+            description={idFilter.equipments.map((equipments) => (
               <li className="equip">{equipments}</li>
             ))}
-          </div>
+          />
         </div>
       </div>
+      <Footer />
     </>
   )
 }
