@@ -5,6 +5,7 @@ import Footer from '../components/Footer'
 import AppartDescription from './AppartDescription'
 import 'react-responsive-carousel/lib/styles/carousel.min.css'
 import { Carousel } from 'react-responsive-carousel'
+import '../styles/Carousel.css'
 
 function AppartInfo() {
   const { appartId } = useParams()

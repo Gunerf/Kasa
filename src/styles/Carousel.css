@@ -1,0 +1,26 @@
+.carousel .control-prev.control-arrow {
+    left: 80px;
+}
+.carousel .control-next.control-arrow {
+    right: 80px;
+}
+.carousel .thumbs{
+    display: none;
+}
+.carousel .control-dots{
+    display: none;
+}
+.carousel.carousel-slider .control-arrow:hover {
+    background: none;
+}
+.carousel .carousel-status {
+    position: absolute;
+    bottom: -30px;
+    text-align: -webkit-center;
+    width: 100%;
+    display: inline-block;
+    font-size: 40px;
+    text-shadow: none;
+    color: #fff;
+    top: auto;
+}
