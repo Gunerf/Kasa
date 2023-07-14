@@ -15,7 +15,7 @@
     justify-content: space-between;
     margin-top: 3rem;
     margin-bottom: 10rem;
-    @media screen and (width <= 869px) {
+    @media screen and (width <= 768px) {
         flex-direction: column;
         gap: 3rem;
         }
