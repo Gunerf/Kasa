@@ -49,3 +49,6 @@ filter: brightness(0.8);
     bottom: 0;
     margin-bottom: 1rem;
 }
+.no-image{
+    display: none;
+}

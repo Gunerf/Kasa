@@ -10,11 +10,21 @@ function Carousel() {
   const { appartId } = useParams()
   const idFilter = data.find((appart) => appart.id === appartId)
   const imageArray = idFilter.pictures
-  console.log(imageArray)
+  console.log(currentPicture)
 
   const imageClass = (i) => {
     if (i === currentPicture) return 'visible'
     return ''
+  }
+  const noNextImage = () => {
+    if (currentPicture + 1 === imageArray.length) {
+      return 'no-image'
+    }
+  }
+  const noPreviousImage = () => {
+    if (imageArray.length === 1 || currentPicture === 0) {
+      return 'no-image'
+    }
   }
 
   const moveToNext = () => {
@@ -39,10 +49,13 @@ function Carousel() {
               alt=""
             />
           ))}
-          <button className="next" onClick={moveToNext}>
+          <button className={`next ${noNextImage()}`} onClick={moveToNext}>
             <i className="fas fa-chevron-right"></i>
           </button>
-          <button className="previous" onClick={moveToPrevious}>
+          <button
+            className={`previous ${noPreviousImage()}`}
+            onClick={moveToPrevious}
+          >
             <i className="fas fa-chevron-left"></i>
           </button>
           <span className="image-number">
