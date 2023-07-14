@@ -3,20 +3,14 @@ import { useParams } from 'react-router-dom'
 import data from '../data/logements.json'
 import Footer from '../components/Footer'
 import AppartDescription from './AppartDescription'
-import 'react-responsive-carousel/lib/styles/carousel.min.css'
-import { Carousel } from 'react-responsive-carousel'
-import '../styles/Carousel.css'
+import Carousel from './Carousel'
 
 function AppartInfo() {
   const { appartId } = useParams()
   const idFilter = data.find((appart) => appart.id === appartId)
   return (
     <>
-      <Carousel>
-        {idFilter.pictures.map((appart) => (
-          <img src={appart} alt="" />
-        ))}
-      </Carousel>
+      <Carousel />
       <div className="appart-info">
         <div className="main-title">
           <div className="appart-title">
