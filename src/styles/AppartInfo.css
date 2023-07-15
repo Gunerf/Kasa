@@ -15,7 +15,7 @@
     justify-content: space-between;
     margin-top: 3rem;
     margin-bottom: 10rem;
-    @media screen and (width <= 768px) {
+    @media screen and (width <= 900px) {
         flex-direction: column;
         gap: 3rem;
         }
@@ -28,16 +28,16 @@
 }
 .tag{
     background-color: #ff6060;
-    padding: 0.2rem;
-    padding-inline: 2rem;
+    padding: 0.4rem;
+    padding-inline: 3rem;
     color: white;
     border-radius: 10px;
-    font-size: 25px;
+    font-size: 17px;
 }
 .main-title{
     display: flex;
     justify-content: space-between;
-    @media screen and (width <= 768px) {
+    @media screen and (width <= 800px) {
     flex-direction: column;
     }
 }
@@ -64,8 +64,9 @@
 }
 .appart-notation{
     font-size: 2rem;
-    @media screen and (width <= 768px) {
-        padding-top: 2rem;
+    @media screen and (width <= 800px) {
+        padding-top: 1rem;
+        font-size: 1.5rem;
         }
 }
 .appart-notation .off{
@@ -95,10 +96,12 @@
     list-style-type: none;
 }
 .appart-publicator{
-    @media screen and (width <= 768px) {
+    @media screen and (width <= 800px) {
         display: flex;
         flex-direction: row-reverse;
-        gap: 7rem;
+        justify-content: space-evenly;
+        gap: 2rem;
+        margin-top: 2rem;
         }
 }
 .image-profil{
@@ -106,8 +109,11 @@
     width: 100%;
 }
 .dropdown .description{
-    width: 45%;
+    width: 48%;
     padding: 0;
+    @media screen and (width <= 900px) {
+        width: 100%;
+    }
 }
 .dropdown .description h3{
     padding: 0.5rem;

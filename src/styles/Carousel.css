@@ -30,6 +30,15 @@ filter: brightness(0.8);
     background: transparent;
     border: none;
     cursor: pointer;
+    @media screen and (width <= 900px){
+        font-size: 2rem;
+        right: 15px;
+    }
+}
+.next{
+    @media screen and (width <= 1200px){
+        right: 20px;
+    }
 }
 .previous{
     position: absolute;
@@ -41,6 +50,9 @@ filter: brightness(0.8);
     background: transparent;
     border: none;
     cursor: pointer;
+    @media screen and (width <= 900px){
+        font-size: 2rem;
+    }
 }
 .image-number{
     position: absolute;
@@ -50,6 +62,9 @@ filter: brightness(0.8);
     font-size: 2rem;
     bottom: 0;
     margin-bottom: 1rem;
+    @media screen and (width <= 800px){
+        font-size: 1rem;
+    }
 }
 .no-image{
     display: none;
