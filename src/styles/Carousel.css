@@ -19,6 +19,9 @@ filter: brightness(0.8);
 }
 .main-container{
     padding-inline: 5rem;
+    @media screen and (width <= 860px) {
+        padding-inline: 1rem;
+        }
 }
 .next{
     position: absolute;
@@ -65,7 +68,4 @@ filter: brightness(0.8);
     @media screen and (width <= 800px){
         font-size: 1rem;
     }
-}
-.no-image{
-    display: none;
 }

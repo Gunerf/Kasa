@@ -1,5 +1,8 @@
 .appart-info{
     padding-inline: 4rem;
+    @media screen and (width <= 860px) {
+        padding-inline: 1rem;
+        }
 }
 .appart-title h1{
     margin: 0;
@@ -33,6 +36,10 @@
     color: white;
     border-radius: 10px;
     font-size: 17px;
+    @media screen and (width <= 860px) {
+        padding-inline: 2rem;
+        font-size: 14px;
+        }
 }
 .main-title{
     display: flex;
@@ -99,8 +106,8 @@
     @media screen and (width <= 800px) {
         display: flex;
         flex-direction: row-reverse;
-        justify-content: space-evenly;
-        gap: 2rem;
+        justify-content: space-around;
+        gap: 6rem;
         margin-top: 2rem;
         }
 }

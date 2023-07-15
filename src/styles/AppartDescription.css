@@ -3,6 +3,9 @@
     flex-direction: column;
     padding-inline: 5rem;
     padding-top: 2rem;
+    @media screen and (width <= 860px) {
+        padding-inline: 1rem;
+        }
 }
 .description h3{
     display: flex;

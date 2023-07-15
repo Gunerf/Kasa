@@ -16,4 +16,7 @@
 .title{
     font-size: 30px;
     margin-bottom: 2rem;
+    @media screen and (width <= 860px) {
+        text-align: center;
+        }
 }

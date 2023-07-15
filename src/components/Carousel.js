@@ -16,16 +16,6 @@ function Carousel() {
     if (i === currentPicture) return 'visible'
     return ''
   }
-  const noNextImage = () => {
-    if (currentPicture + 1 === imageArray.length) {
-      return 'no-image'
-    }
-  }
-  const noPreviousImage = () => {
-    if (imageArray.length === 1 || currentPicture === 0) {
-      return 'no-image'
-    }
-  }
 
   const moveToNext = () => {
     setCurrentPicture((currentPicture + 1) % imageArray.length)
@@ -49,13 +39,10 @@ function Carousel() {
               alt=""
             />
           ))}
-          <button className={`next ${noNextImage()}`} onClick={moveToNext}>
+          <button className="next" onClick={moveToNext}>
             <i className="fas fa-chevron-right"></i>
           </button>
-          <button
-            className={`previous ${noPreviousImage()}`}
-            onClick={moveToPrevious}
-          >
+          <button className="previous" onClick={moveToPrevious}>
             <i className="fas fa-chevron-left"></i>
           </button>
           <span className="image-number">
