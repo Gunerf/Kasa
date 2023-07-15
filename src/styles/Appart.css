@@ -6,6 +6,9 @@
     width: 100%;
     overflow: hidden;
     position: relative;
+    @media screen and (width <= 860px) {  
+        height: 300px;
+        } 
 }
 .appart{
     padding: 0;

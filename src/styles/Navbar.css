@@ -14,6 +14,11 @@
     color: #ff6060;
     min-height: 150px;
     min-width: 350px;
+    @media screen and (width <= 860px) {  
+        font-size: 20px;
+        justify-content: space-evenly;
+        min-width: 200px;
+        } 
 }
 a{
     color: #ff6060;
