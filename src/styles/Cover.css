@@ -9,6 +9,7 @@
 .container-image{
     padding-inline: 4rem;
     position: relative;
+    padding-bottom: 2rem;
 }
 .overlay{
     width: 80%;

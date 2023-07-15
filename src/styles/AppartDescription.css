@@ -13,12 +13,16 @@
     padding: 1rem;
     margin-bottom: 0;
     font-size: 25px;
+    border-radius: 20px;
 }
 .description p{
     background: whitesmoke;
     margin-top: 0;
-    padding: 1rem;
-    padding-block: 0;
+    padding: 2rem;
     color: #FF6060;
+    position: relative;
+    top: -15px;
     font-size: 20px;
+    z-index: -1;
+    border-radius: 0 0 20px 20px;
 }

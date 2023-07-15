@@ -15,7 +15,7 @@ function AppartDescription(props) {
           <i className="fas fa-chevron-down"></i>
         </span>
       </h3>
-      <p>{visible && props.description}</p>
+      {visible && <p>{props.description}</p>}
     </div>
   )
 }
