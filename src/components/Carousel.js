@@ -28,6 +28,12 @@ function Carousel() {
     }
     setCurrentPicture(currentPicture - 1)
   }
+
+  const oneImage = () => {
+    if (imageArray.length === 1) {
+      return 'no-image'
+    }
+  }
   return (
     <>
       <div className="main-container">
@@ -39,10 +45,10 @@ function Carousel() {
               alt=""
             />
           ))}
-          <button className="next" onClick={moveToNext}>
+          <button className={`next ${oneImage()}`} onClick={moveToNext}>
             <i className="fas fa-chevron-right"></i>
           </button>
-          <button className="previous" onClick={moveToPrevious}>
+          <button className={`previous ${oneImage()}`} onClick={moveToPrevious}>
             <i className="fas fa-chevron-left"></i>
           </button>
           <span className="image-number">

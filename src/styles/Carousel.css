@@ -69,3 +69,6 @@ filter: brightness(0.8);
         font-size: 1rem;
     }
 }
+.no-image{
+    display: none;
+}
