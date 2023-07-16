@@ -12,7 +12,10 @@ function AppartDescription(props) {
       <h3>
         {props.title}
         <span>
-          <i className="fas fa-chevron-down"></i>
+          {!visible && (
+            <i className="fas fa-chevron-down" onClick={accordion}></i>
+          )}
+          {visible && <i className="fas fa-chevron-up" onClick={accordion}></i>}
         </span>
       </h3>
       {visible && <p>{props.description}</p>}
