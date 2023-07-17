@@ -8,7 +8,11 @@ function App() {
   return (
     <>
       <Navbar />
-      <Cover image="image.png" title="Chez vous, partout et ailleurs" />
+      <Cover
+        image="image.png"
+        title="Chez vous, partout et ailleurs"
+        className="paysage-montagne"
+      />
       <Array />
       <Footer />
     </>

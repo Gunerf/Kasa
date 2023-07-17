@@ -2,6 +2,11 @@
     position: relative;
     margin-bottom: 2rem;
     height: 30rem;
+    @media screen and (width <= 860px) {
+        height: 20rem;
+        top: -15px;
+        margin-bottom: 0;
+        }
 }
 .image-appart{
 position: absolute;
@@ -66,7 +71,7 @@ filter: brightness(0.8);
     bottom: 0;
     margin-bottom: 1rem;
     @media screen and (width <= 800px){
-        font-size: 1rem;
+        display: none;
     }
 }
 .no-image{

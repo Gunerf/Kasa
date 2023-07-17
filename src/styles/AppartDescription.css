@@ -5,6 +5,7 @@
     padding-top: 2rem;
     @media screen and (width <= 860px) {
         padding-inline: 1rem;
+        padding-top: 0rem;
         }
 }
 .description h3{
@@ -16,7 +17,13 @@
     padding: 1rem;
     margin-bottom: 0;
     font-size: 25px;
-    border-radius: 20px;
+    border-radius: 15px;
+    @media screen and (width <= 860px) {
+        font-size: 15px;
+        padding: 0.5rem;
+        margin-top: 1.5rem;
+        border-radius: 10px;
+        }
 }
 .description p{
     background: whitesmoke;
@@ -28,4 +35,9 @@
     font-size: 20px;
     z-index: -1;
     border-radius: 0 0 20px 20px;
+    @media screen and (width <= 860px) {
+        font-size: 15px;
+        padding: 1.5rem;
+        border-radius: 0 0 10px 10px;
+        }
 }
